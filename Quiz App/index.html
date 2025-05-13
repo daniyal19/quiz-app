@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <style>
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body onload="nextQuestion()">
+    <div style="font-family: Arial, Helvetica, sans-serif; text-align: center;">
+        <h1>Quiz App</h1>
+    </div>
+
+    <div style="justify-items: center;">
+        <p id="ques"></p>
+        <br>
+        <input type="radio" name="options" value="1" onclick="clicked()">
+        <label id="opt1"></label>
+        <br>
+        <br>
+        <input type="radio" name="options" value="2" onclick="clicked()">
+        <label id="opt2"></label>
+        <br>
+        <br>
+        <input type="radio" name="options" value="3" onclick="clicked()">
+        <label id="opt3"></label>
+        <br>
+        <br>
+        <button disabled id="btn" onclick="nextQuestion()">Next</button>
+    </div>
+    
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
